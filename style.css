@@ -1,0 +1,149 @@
+*{
+    font-family: 'nyala.ttf';
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-size: 15px;
+}
+
+#icone{
+    position: fixed;
+    cursor: pointer;
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    z-index: 1;
+}
+
+.barra{
+    position: fixed;
+    top: 0px;
+    background: linear-gradient(45deg, rgb(73, 73, 73), rgb(0, 217, 255));
+    width: 100vw;
+    height: 60px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    transition: all .2s linear;
+    left: -100vw;  
+    border-radius: 0px;  
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .barra{
+    transform: translateX(100vw);
+}
+
+.menu{
+    position: relative;
+    background: linear-gradient(45deg, rgb(73, 73, 73), rgb(0, 217, 255));
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    left: 65px;
+    border-radius: 0px;  
+}
+
+.menu ul{
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+
+.menu ul li{
+    position: relative;
+    width: 200px;
+    float: left;
+    text-align: center;
+}
+
+.menu a {
+    color:rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.404);
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 16px;
+    transition: all .2s linear;
+    opacity: 0px;
+}
+
+.menu li a:hover{
+    opacity: 1px;
+    color: rgb(0, 217, 255);
+    background: rgba(255, 252, 252);
+    font-size: 25px;
+    text-align: center;
+    transition: all .2s radial;
+}
+
+.menu li ul{
+    text-align: center;
+    display:none;
+}
+
+.menu li:hover ul, .menu li.over ul {
+    position: absolute;
+    text-align: center;
+    display:block;
+    left: 0px;
+}
+
+.subMenu{
+    background-color: (rgb(0, 0, 0));
+    position: relative;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    left: 65px;
+    border-radius: 0px;
+}
+
+h2{
+    position: relative;
+    margin-left: 50px;
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+h3{
+    text-align: justify;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    margin: 35px;   
+}
+
+h2::before{
+    content: '';
+    background: linear-gradient(to left, rgb(0, 217, 255), rgb(26, 26, 26));
+    position: absolute;
+    width: 110px;
+    height: 3px;
+    bottom: 35px;
+    border-radius: 4px;
+}
+
+p{
+    text-align: justify;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    margin: 35px;  
+}
+
+aside{
+    background-image: url(imagens/2021-07-29\ \(4\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}

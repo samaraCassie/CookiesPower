@@ -1,0 +1,139 @@
+*{
+    font-family: 'nyala.ttf';
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#icone{
+    position: fixed;
+    cursor: pointer;
+    padding: 15px;
+    width: 40px;
+    height: 40px;
+    left: 0px;
+    z-index: 1;
+}
+
+.barra{
+    position: fixed;
+    top: 0px;
+    background: linear-gradient(45deg, rgb(73, 73, 73), pink);
+    width: 100%;
+    height: 108px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    transition: all .2s linear;
+    left: -100vw;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .barra{
+    transform: translateX(100vw);
+}
+
+nav{
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu li ul{
+    display:none;
+}
+
+.menu ul ul li:hover ul {
+    display:block;
+}
+
+.menu{
+    position: relative;
+    color:rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.404);
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    transition: all .2s linear;
+    opacity: 0;
+    left: 65px;
+    float: left;
+}
+
+.menu:hover{
+    color: rgb(255, 122, 151);
+    background: rgba(255, 255, 255, 0.404);
+    font-size: 25px;
+}
+
+.submenu{
+    position: relative;
+    transform-origin: top center;
+    transform: translateX(-50%) rotateX(-90deg);
+    transition: all 1s radial;
+    display: none;
+}
+
+.submenu:hover{
+    display: block;
+    opacity: 1;
+    transform: rotateX(0) translateX(-50%);
+}
+
+#check:checked ~ .barra .menu{
+    opacity: 1;
+    margin-top: 0px;
+    transition-delay: .2s;
+}
+
+
+h1{
+    left: 0px;
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    top: 45%;
+    width: 100vw;
+    font-size: 95px;
+    color: rgb(41, 41, 41);
+    background: radial-gradient(rgba(255, 186, 186, 0.523), rgba(22, 22, 22, 0.488));
+}
+
+h2{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 50px;
+    color: whitesmoke;
+}
+
+h2::before{
+    content: '';
+    background: linear-gradient(to left, rgb(255, 122, 144), rgb(26, 26, 26));
+    position: absolute;
+    width: 110px;
+    height: 3px;
+    bottom: 35px;
+    border-radius: 4px;
+}
+
+p{
+    position: relative;
+    top: 80px;
+    text-align: center;
+    margin: 35px;
+    color: white;
+}
+
+.underline{
+    background: linear-gradient(to left, rgb(255, 122, 144), rgb(26, 26, 26));
+    position: relative;
+    top: 60px;
+    height: 3px;
+}

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    border-radius: 8px;
+    border: 0.5px;
+}
+body{
+    background:linear-gradient(45deg, rgb(0, 217, 255), rgb(26, 26, 26));
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container{
+    position: relative;
+    background: radial-gradient(rgba(70, 236, 236, 0.473) rgba(0, 139, 139, 0.295));
+    width: 25vw;
+    height: 100%;
+    padding: 2rem;
+    box-shadow: 5px 5px 55px rgb(255, 141, 198);
+    right: 20vw;
+}
+
+main h2 {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+main h2::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 125px;
+    top: 1px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(to left, rgb(255, 122, 144), rgb(26, 26, 26));
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="submit"] {
+    margin-top: 10px;
+    padding: 7px;
+    width: 100%;
+    background: linear-gradient(to left, rgb(255, 122, 144), rgb(26, 26, 26));
+        
+    color: white;
+    transition: all 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: 0.5px;
+    background: linear-gradient(to right, rgb(255, 122, 144), rgb(26, 26, 26));
+}
+
+form .campo:first-child {
+    margin-bottom: 5px;
+}
+
+
+input{
+    outline: none;
+
+    font-weight: 300;
+    border-radius: 4px;
+}
